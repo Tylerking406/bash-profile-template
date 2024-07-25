@@ -1,0 +1,10 @@
+# Bookmarks
+alias bookmark-chatgpt="browser https://chat.openai.com/"
+alias browser="_bookmark $1"
+_bookmark() {
+  if [[ "$DirectoryRepos/bash-profile" == "/home/user/bash-profile" ]]; then
+    echo "$1"
+  else
+    firefox "$1"
+  fi
+}
